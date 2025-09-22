@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* fonts */
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+button {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding-top: 3rem;
+    margin: auto 1rem;
+}
+
+section > h2 {
+    margin-bottom: 1rem;
+}
+
+.job__container {
+    margin-bottom: 1rem;
+}
+
+.job__company {
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.projects__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.projects__item {
+    border: 1px solid #6B6B6B;
+    border-radius: 10px;
+    padding: 0.7rem;
+    padding-top: 3rem;
+    white-space: pre-line;
+}
+
+.projects__item--yellow {
+    background-color: rgba(255, 248, 107, 0.15);
+    border: 1px solid #FFF86B;
+}
+
+.projects__item--blue {
+    background-color: rgba(63, 0, 135, 0.15);
+    border: 1px solid #C1C6FF;
+}
+
+.about__content {
+    white-space: pre-line;
+}
+
+.connect__title {
+    text-align: center;
+}
+
+.connect__container {
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
+.connect__container > a {
+    display: flex;
+}
+
+.link__container {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.logo {
+    width: 2rem;
+    height: auto;
+    /* margin-right: 1rem; */
+}
+
+#connect {
+    margin: 6rem auto;
+}
+    
+.rights {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: gray;
+}
+
+@media screen and (min-width: 1200px) {
+    section {
+        max-width: 60rem;
+        margin: auto;
+    }
+    
+    .job__container {
+        display: grid;
+        grid-template-columns: 4fr 6fr;
+    }
+    
+    .projects__grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
