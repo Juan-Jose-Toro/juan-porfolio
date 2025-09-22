@@ -244,7 +244,7 @@ const Hero = ({
                         <a href="#about" className="hero__button hero__button--white">About</a>
                         <a href="#work-experience" className="hero__button">Work Experience</a>
                         <a href="#projects" className="hero__button">Projects</a>
-                        <a href="#connect" className="hero__button">Connect</a>
+                        <a href="#connect" className="hero__button hero__button-connect">Connect</a>
                     </div>
                 </div>
             </div>

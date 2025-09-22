@@ -16,7 +16,7 @@ function App() {
     
     const aboutContent = `Hi I'm Juan! I love building and solving problems 🧱
     
-    I'm currently pursuing a Master of Science in Computer Science at University of Colorado Boulder. I also graduated from UWaterloo from Computational Mathematics, Statistics and a minor in Combinatorics and Optimization.
+    I'm currently pursuing a Master of Science in Computer Science at University of Colorado Boulder. I also graduated from the University of Waterloo from Computational Mathematics, Statistics and a minor in Combinatorics and Optimization.
 
     I have experience across full stack web development, data science and AI. I have contributed to production applications across MERN + Azure tech stacks delivering impactful interfaces, efficient APIs and clean data pipelines. With a team at UWaterloo we also implemented machine learning papers like "A robust EM clustering algorithm for Gaussian mixture models" which you can find in my github.
 
@@ -38,19 +38,23 @@ function App() {
     const dataProjects = [
         {
             title: 'Time Tracker App',
-            skills: 'ReactJS, React Hooks, Redux'
+            skills: 'ReactJS, React Hooks, Redux',
+            link: 'https://github.com/Juan-Jose-Toro/blog-frontend'
         },
         {
             title: 'Note Taking App',
-            skills: 'Angular, Express, Vim'
+            skills: 'Angular, Express, Vim',
+            link: 'https://github.com/Juan-Jose-Toro/Tracker'
         },
         {
             title: 'EM Robust Paper Implementation',
-            skills: 'Data Science'
+            skills: 'Data Science',
+            link: 'https://github.com/Juan-Jose-Toro/em-robust-algorithm-implementation'
         },
         {
             title: 'UDES Software Engineer Website',
-            skills: 'NextJS, TypeScript'
+            skills: 'NextJS, TypeScript',
+            link: 'https://github.com/Juan-Jose-Toro/udes-se'
         }
     ]
     
@@ -61,10 +65,12 @@ function App() {
         }
         const curColor = specialColors[item.title] || '';
         return (
-            <div key={i} className={'projects__item ' + curColor}>
-                <h3>{item.title}</h3>
-                <p>{item.skills}</p>
-            </div>
+            <a key={i} href={item.link}>
+                <div key={i} className={'projects__item ' + curColor}>
+                    <h3>{item.title}</h3>
+                    <p>{item.skills}</p>
+                </div>
+            </a>
         );
     });
 

@@ -31,7 +31,7 @@
     padding: 0.8rem 2rem;
     background-color: rgba(0, 0, 0, 0.36);
     border: solid 1px rgba(107, 107, 107, 0.88);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(4px);
     margin-bottom: 1.25rem;
 }
 
@@ -40,6 +40,12 @@
     background-color: white;
     border: none;
 }
+
+.hero__button-connect {
+    color: #d6dc61;
+    border: solid 1px rgba(214, 220, 97, 0.88)
+}
+    
 
 @media screen and (min-width: 1200px) {
     .hero__title {
