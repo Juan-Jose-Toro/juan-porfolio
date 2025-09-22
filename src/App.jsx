@@ -39,12 +39,12 @@ function App() {
         {
             title: 'Time Tracker App',
             skills: 'ReactJS, React Hooks, Redux',
-            link: 'https://github.com/Juan-Jose-Toro/blog-frontend'
+            link: 'https://github.com/Juan-Jose-Toro/Tracker'
         },
         {
             title: 'Note Taking App',
             skills: 'Angular, Express, Vim',
-            link: 'https://github.com/Juan-Jose-Toro/Tracker'
+            link: 'https://github.com/Juan-Jose-Toro/blog-frontend'
         },
         {
             title: 'EM Robust Paper Implementation',
