@@ -17,6 +17,8 @@ const Hero = ({
     const grid = useRef({ columns: 0, rows: 0 });
     const context = useRef(null);
     const lastGlitchTime = useRef(Date.now());
+    
+    const lastCanvasDimensions = useRef({ width: 0, height: 0});
 
     const lettersAndSymbols = Array.from(characters);
 
@@ -174,8 +176,12 @@ const Hero = ({
 
     useEffect(() => {
         const canvas = canvasRef.current;
-        if (!canvas) return;
-
+        if ( !canvas ) return;
+        
+        const { width, height } = canvas.parentElement.getBoundingClientRect()
+        lastCanvasDimensions.current.width = width;
+        lastCanvasDimensions.current.height = height;
+        
         context.current = canvas.getContext('2d');
         resizeCanvas();
         animate();
@@ -185,6 +191,14 @@ const Hero = ({
         const handleResize = () => {
             clearTimeout(resizeTimeout);
             resizeTimeout = setTimeout(() => {
+                const canvas = canvasRef.current;
+                const { width, height } = canvas.parentElement.getBoundingClientRect()
+                if (width == lastCanvasDimensions.current.width && 
+                    height == lastCanvasDimensions.current.height) {
+                    return;
+                }
+                lastCanvasDimensions.current.width = width;
+                lastCanvasDimensions.current.height = height;
                 cancelAnimationFrame(animationRef.current);
                 resizeCanvas();
                 animate();
