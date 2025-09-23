@@ -16,7 +16,7 @@ function App() {
     
     const aboutContent = `Hi I'm Juan! I love building and solving problems 🧱
     
-    I'm currently pursuing a Master of Science in Computer Science at University of Colorado Boulder. I also graduated from the University of Waterloo from Computational Mathematics, Statistics and a minor in Combinatorics and Optimization.
+    I'm currently pursuing a Master of Science in Computer Science at the University of Colorado Boulder. I also graduated from the University of Waterloo from Computational Mathematics, Statistics and a minor in Combinatorics and Optimization.
 
     I have experience across full stack web development, data science and AI. I have contributed to production applications across MERN + Azure tech stacks delivering impactful interfaces, efficient APIs and clean data pipelines. With a team at UWaterloo we also implemented machine learning papers like "A robust EM clustering algorithm for Gaussian mixture models" which you can find in my github.
 
