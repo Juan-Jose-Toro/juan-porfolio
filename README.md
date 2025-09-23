@@ -5,4 +5,7 @@ Welcome to my porfolio!
 
 This page was developed using Vite, React and React Hooks!
 
-To run it locally use `yarn install` and `yarn run dev`.
+You can check the pages code in `src/App.jsx` with all the components inside `src/components/`.
+
+To run it locally use `yarn install` and `yarn run dev`
+
