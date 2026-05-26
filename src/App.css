@@ -22,8 +22,9 @@ a {
 }
 
 section {
+    max-width: 80ch;
+    margin-inline: max(2rem, calc((100% - 80ch) / 2));
     padding-top: 3rem;
-    margin: auto 1rem;
 }
 
 section > h2 {
@@ -46,7 +47,7 @@ section > h2 {
 }
 
 .projects__item {
-    border: 1px solid #6B6B6B;
+    border: 1px solid #6b6b6b;
     border-radius: 10px;
     padding: 0.7rem;
     padding-top: 3rem;
@@ -55,12 +56,12 @@ section > h2 {
 
 .projects__item--yellow {
     background-color: rgba(255, 248, 107, 0.15);
-    border: 1px solid #FFF86B;
+    border: 1px solid #fff86b;
 }
 
 .projects__item--blue {
     background-color: rgba(63, 0, 135, 0.15);
-    border: 1px solid #C1C6FF;
+    border: 1px solid #c1c6ff;
 }
 
 .about__content {
@@ -96,7 +97,7 @@ section > h2 {
 #connect {
     margin: 6rem auto;
 }
-    
+
 .rights {
     margin-bottom: 1rem;
     text-align: center;
@@ -108,12 +109,12 @@ section > h2 {
         max-width: 60rem;
         margin: auto;
     }
-    
+
     .job__container {
         display: grid;
         grid-template-columns: 4fr 6fr;
     }
-    
+
     .projects__grid {
         grid-template-columns: 1fr 1fr;
     }
